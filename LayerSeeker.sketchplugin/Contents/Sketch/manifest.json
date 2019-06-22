@@ -1,0 +1,24 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "layer-seeker",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu" : {
+    "title" : "layer-seeker",
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier"
+    ]
+  },
+  "identifier" : "com.example.sketch.e05cb365-fbc8-408a-aae9-93deb8a0e8cd",
+  "version" : "1.0",
+  "description" : "",
+  "authorEmail" : "",
+  "name" : "layer-seeker"
+}

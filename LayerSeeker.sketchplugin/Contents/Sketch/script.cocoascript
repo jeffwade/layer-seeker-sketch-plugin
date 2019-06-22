@@ -1,0 +1,51 @@
+          var onRun = function(context) {
+          /* Layer Seeker
+** Script to find and select layers by name
+** 
+** To-do: figure out how to cycle through the results
+** (eg "Next layer", "Previous layer")
+**
+**
+*/
+
+//console.log(context);
+
+var sketch = require('sketch')
+var UI = require('sketch/ui')
+
+var document = sketch.getSelectedDocument();
+var selection = document.selectedLayers;
+
+selection.clear();
+
+var name;
+
+UI.getInputFromUser(
+  "Find layers by name:",
+  {
+    initialValue: 'rectangle',
+  },
+  (err, value) => {
+    if (err) {
+      // most likely the user canceled the input
+      return
+    } else {
+      name = value;
+      return;
+    }
+  }
+)
+console.log(name);
+
+var layerList = document.getLayersNamed(name);
+if (layerList.length > 0) {
+  UI.message("There are " + layerList.length + " layers named " + name + ".");
+  layerList.forEach(layer => {
+    layer.selected = true;
+  } )
+} else {
+  UI.message("There are no layers with that name.");
+}
+
+          };
+          
