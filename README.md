@@ -1,12 +1,14 @@
-# Jeff Wade's sketch plugins
-
-This is a collection of scripts and plugins for Sketch that I have developed for my own workflow.
-
-## Layer Seeker
+# Layer Seeker
 
 A plugin to find, select and cycle through all layers matching the user-input name.
 
-### To-do
+## Usage
+
+1. Select Layer Seeker from the plugin menu
+2. Enter the name of the layer(s) you want to select
+3. Yay!
+
+## To-do
 
 - [x] Find layers by name
 - [x] Select all matching layers
