@@ -8,10 +8,10 @@ A plugin to find, select and cycle through all layers matching the user-input na
 
 ### To-do
 
-[x] Find layers by name
-[x] Select all matching layers
-[ ] Select first matching layer
-[ ] Move to next match
-[ ] Move to previous match
-[x] Display number of layers matching name
-[ ] Display index of currently selected match
+- [x] Find layers by name
+- [x] Select all matching layers
+- [ ] Select first matching layer
+- [ ] Move to next match
+- [ ] Move to previous match
+- [x] Display number of layers matching name
+- [ ] Display index of currently selected match
